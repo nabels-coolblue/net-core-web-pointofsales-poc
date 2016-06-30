@@ -1,0 +1,16 @@
+﻿@model ProductModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+
+    <div class="col-md-14">
+        <img class="img-responsive" alt="product" src="@Url.Content(Model.ImageUrl)">
+
+        <p><span>@Model.Name</span></p>
+        <p><span>@string.Format("{0:C}", Model.Price)</span></p>
+    </div>
+</div>
+
+
